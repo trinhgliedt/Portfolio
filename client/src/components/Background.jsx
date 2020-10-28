@@ -7,8 +7,8 @@ import image4 from '../images/png4-effect4.png'
 
 function Background() {
   return (
-      <section>
-        <div class="leaves">
+      <section class="p-0">
+        <div class="leaves set1 m-0 p-0">
             <div><img src={image1} alt="leaf"/></div>
             <div><img src={image2} alt="leaf"/></div>
             <div><img src={image3} alt="leaf"/></div>
@@ -18,7 +18,7 @@ function Background() {
             <div><img src={image3} alt="leaf"/></div>
             <div><img src={image4} alt="leaf"/></div>
         </div>
-        <div class="leaves set2">
+        <div class="leaves set2 m-0 p-0">
             <div><img src={image1} alt="leaf"/></div>
             <div><img src={image2} alt="leaf"/></div>
             <div><img src={image3} alt="leaf"/></div>
@@ -28,7 +28,7 @@ function Background() {
             <div><img src={image3} alt="leaf"/></div>
             <div><img src={image4} alt="leaf"/></div>
         </div>
-        <div class="leaves set3">
+        <div class="leaves set3 m-0 p-0">
             <div><img src={image1} alt="leaf"/></div>
             <div><img src={image2} alt="leaf"/></div>
             <div><img src={image3} alt="leaf"/></div>
