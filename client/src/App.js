@@ -6,7 +6,7 @@ import Projects from './views/Projects.jsx';
 import Resume from './views/Resume.jsx';
 import './styles/NavBarStyle.scss';
 
-import { Link, Redirect, Router } from "@reach/router";
+import { Router } from "@reach/router";
 
 function App() {
   return (

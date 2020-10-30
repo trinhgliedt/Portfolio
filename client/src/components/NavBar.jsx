@@ -6,7 +6,6 @@ import $ from 'jquery';
 function NavBar() {
 
   $(function(){
-    var str = '#len'; //increment by 1 up to 1-nelemnts
     $(document).ready(function(){
       var i, stop;
       i = 1;
@@ -23,10 +22,10 @@ function NavBar() {
 
   return (
     <div class="row " style={{ position: 'relative', zIndex: '2'}}>
-      <div id="len1" class="col border-bottom mx-2 text-center hoverable" ><div class="header btn selected col text-white">Projects</div></div>
-      <div id="len2" class="col border-bottom mr-2 text-center hoverable"><div class="header btn col text-white">Resume</div></div>
-      <div id="len3" class="col border-bottom mr-2 text-center hoverable"><div class="header btn col text-white">LinkedIn</div></div>
-      <div id="len4" class="col border-bottom mr-2 text-center hoverable"><div class="header btn col text-white">GitHub</div></div>
+      <div id="len1" class="col mx-2 text-center hoverable" ><a href="/projects" class="header btn selected col text-white">Projects</a></div>
+      <div id="len2" class="col mr-2 text-center hoverable"><a href="/resume" class="header btn col text-white">Resume</a></div>
+      <div id="len3" class="col  mr-2 text-center hoverable"><a href="https://www.linkedin.com/in/trinhgliedt/" class="header btn col text-white">LinkedIn</a></div>
+      <div id="len4" class="col mr-2 text-center hoverable"><a href="https://github.com/trinhgliedt" class="header btn col text-white">GitHub</a></div>
     </div>
 
 
