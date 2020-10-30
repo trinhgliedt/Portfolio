@@ -4,7 +4,6 @@ import Background from './components/Background.jsx';
 import NavBar from './components/NavBar.jsx';
 import Projects from './views/Projects.jsx';
 import Resume from './views/Resume.jsx';
-import './styles/NavBarStyle.scss';
 
 import { Router } from "@reach/router";
 
