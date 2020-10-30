@@ -2,3 +2,7 @@
     /* outline: 1px solid grey; */
     color: white;
 }
+
+body, .bgGradient {
+    background: radial-gradient(rgb(173, 175, 120), rgb(31, 28, 28)); 
+  }
