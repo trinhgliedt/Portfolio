@@ -1,74 +1,43 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-
-body{
-  height:100vh;
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  font-family: 'Roboto', sans-serif;
-}
-
-h2{
-  margin:0px;
-  text-transform: uppercase;
-}
-
-h6{
-  margin:0px;
-  color:#777;
-}
-
-.wrapper{
-  text-align:center;
-  margin:50px auto;
-}
-
-.tabs{
-  margin-top:50px;
-  font-size:15px;
-  padding:0px;
-  list-style:none;
-  background:#fff;
-  box-shadow:0px 5px 20px rgba(0,0,0,0.1);
-  display:inline-block;
-  border-radius:50px;
-  position:relative;
-}
-
-.tabs a{
-  text-decoration:none;
-  color: #777;
-  text-transform:uppercase;
-  padding:10px 20px;
-  display:inline-block;
-  position:relative;
-  z-index:1;
-  transition-duration:0.6s;
-}
-
-.tabs a.active{
-  color:#fff;
-}
-
-.tabs a i{
-  margin-right:5px;
-}
-
-.tabs .selector{
-  height:100%;
-  display:inline-block;
-  position:absolute;
-  left:0px;
-  top:0px;
-  z-index:1;
-  border-radius:50px;
-  transition-duration:0.6s;
-  transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+div#infoBox{
+    position:relative; /*this is the key*/
+    color:#000;
+    /* top:50px;
+    left:50px; */
+    text-decoration:none;
+    text-align:center;
+  }
   
-  background: #05abe0;
-  background: -moz-linear-gradient(45deg, #05abe0 0%, #8200f4 100%);
-  background: -webkit-linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
-  background: linear-gradient(45deg, #05abe0 0%,#8200f4 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#05abe0', endColorstr='#8200f4',GradientType=1 );
-}
+  /* #infoBox {display: none} */
+  
+  #linkedIn:hover ~ #gitHub {
+    display: none;
+  }
+  
+  #gitHub:hover ~ div#infoBox { /*the span will display just on :hover state*/
+    display: block;
+    position:relative;
+    /* top:-60px; */
+    /* width:15em; */
+    /* border:5px solid #0cf;
+    background-color:#cff; color:#000;
+    text-align: center;
+    padding:10px; */
+  }
+  
+  #linkedIn:hover ~ #infoBox:after{ /*the span will display just on :hover state*/
+    content:'';
+    position:absolute;
+    bottom:-11px;
+    width:10px;
+    height:10px;
+    border-bottom:5px solid #0cf;
+    border-right:5px solid #0cf;
+    background:#cff;
+    left:50%;
+    margin-left:-5px;
+    -moz-transform:rotate(45deg);
+    -webkit-transform:rotate(45deg);
+    transform:rotate(45deg);
+  }
+
+  /* https://stackoverflow.com/questions/10243440/how-to-create-a-box-when-mouse-over-text-in-pure-css */

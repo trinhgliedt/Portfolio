@@ -2,45 +2,82 @@ import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import '../styles/NavBarStyle.css';
+import '../styles/NavBarStyle.scss';
 
-function NavBar() {
-  var tabs = $('.tabs');
-  var selector = $('.tabs').find('a').length;
-  var activeItem = tabs.find('.active');
-  var activeWidth = activeItem.innerWidth();
-  $(".selector").css({
-    "left": activeItem.position.left + "px", 
-    "width": activeWidth + "px"
-  });
-  
-  $(".tabs").on("click","a",function(e){
-    e.preventDefault();
-    $('.tabs a').removeClass("active");
-    $(this).addClass('active');
-    var activeWidth = $(this).innerWidth();
-    var itemPos = $(this).position();
-    $(".selector").css({
-      "left":itemPos.left + "px", 
-      "width": activeWidth + "px"
+function NavBar(props) {
+  $(function(){
+    $(document).ready(function(){
+      var i, stop;
+      i = 1;
+      stop = 4; //num elements
+      setInterval(function(){
+        if (i > stop){
+          return;
+        }
+        $('#len'+(i++)).toggleClass('bounce');
+      }, 500)
     });
   });
 
+  const {selectedTab, setSelectedTab} = props;
+
+
+    function handleSelection(e){
+      setSelectedTab(e.target.id);
+    }
 
   return (
     <>
-    {/* <div class="row" style={{ position: 'relative', zIndex: '2'}}>
-      <div id="len1" class="col mx-2 text-center hoverable" ><a href="/projects" class="header btn selected col text-white">Projects</a></div>
-      <div id="len2" class="col mr-2 text-center hoverable"><a href="/resume" class="header btn col text-white">Resume</a></div>
-      <div id="len3" class="col  mr-2 text-center hoverable"><a href="https://www.linkedin.com/in/trinhgliedt/" class="header btn col text-white">LinkedIn</a></div>
-      <div id="len4" class="col mr-2 text-center hoverable"><a href="https://github.com/trinhgliedt" class="header btn col text-white">GitHub</a></div>
-    </div> */}
-    <nav class="tabs " style={{ position: 'relative', zIndex: '2'}}>
-    <div class="selector"></div>
-    <a href="#" class="active"><i class="fab fa-superpowers"></i>Projects</a>
-    <a href="/"><i class="fas fa-hand-rock"></i>Resume</a>
-    <a href="/"><i class="fas fa-bolt"></i>LinkedIn</a>
-    <a href="/"><i class="fas fa-burn"></i>GitHub</a>
-  </nav>
+    <div className="row" style={{ position: 'relative', zIndex: '2'}}>
+      <div className="col hoverable mx-2 text-center" >
+        <div id="intro"
+        className={selectedTab === "intro" ? "activeTab btn selected col text-white" : "menuItem hoverable menuItem btn selected col text-white"} 
+        onClick={e => handleSelection(e)}
+        >About Me</div>
+      </div>
+
+      <div  className="col hoverable mr-2 text-center" >
+        <div id="projects" 
+        className={selectedTab === "projects" ? "activeTab btn selected col text-white" : "menuItem hoverable menuItem btn selected col text-white"} 
+        onClick={e => handleSelection(e)}
+        >Projects</div>
+      </div>
+
+      <div  className="col hoverable mr-2 text-center">
+        <div id="resume" 
+        className={selectedTab === "resume" ? "activeTab btn selected col text-white" : "menuItem hoverable menuItem btn selected col text-white"} 
+        onClick={e => handleSelection(e)}
+        >Resume</div>
+      </div>
+      <div  className="col hoverable mr-2 text-center">
+        
+        <a href="https://www.linkedin.com/in/trinhgliedt/" 
+        id="linkedIn"
+        className="menuItem hoverable menuItem btn selected col text-white"
+        onClick={e => handleSelection(e)}
+        >LinkedIn</a>
+      </div>
+      <div className="col hoverable mr-2 text-center">
+        <a href="https://github.com/trinhgliedt" 
+        id="gitHub" 
+        className="menuItem hoverable menuItem btn selected col text-white"
+        onClick={e => handleSelection(e)}
+        >GitHub</a>
+      </div>
+
+      <div id="certificates" className="col mr-2 text-center hoverable">
+      <div id="certificates" 
+        className={selectedTab === "certificates" ? "activeTab btn selected col text-white" : "menuItem hoverable menuItem btn selected col text-white"} 
+        onClick={e => handleSelection(e)}
+        >Certificates</div>
+      </div>
+    </div>
+    <div id="infoBox" style={{ zIndex: '2'}}>
+      <span id="msgBoxLinkedIn">This will direct you to my profile on LinkedIn!</span>
+      <span id="msgBoxGitHub">This will direct you to my profile on GitHub!</span>
+    </div>
+
+    {/* <a href="#" class="info">Shailender Arora <span>TOOLTIP</span></a> */}
     </>
   );
 }

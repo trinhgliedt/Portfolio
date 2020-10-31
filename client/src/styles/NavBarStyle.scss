@@ -19,8 +19,8 @@
     height:10px;
     width:90%;
     opacity:0;
-    background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(235, 8, 8, 0) 80%);
-    background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+    background: -webkit-radial-gradient(center, ellipse, rgba(230, 7, 7, 0.35) 0%, rgba(235, 8, 8, 0) 80%);
+    background: radial-gradient(ellipse at center, rgb(250, 142, 1) 0%, rgba(250, 176, 176, 0) 80%);
     /* W3C */
     transition-duration: 0.3s;
     transition-property: transform, opacity;
@@ -79,8 +79,20 @@
       text-align: center !important;
       float: none;
       display: inline-block;
-      font-size: xx-large;
     }
   }
   
-  
+  @import url('https://fonts.googleapis.com/css2?family=Henny+Penny&display=swap');
+
+.menuItem{
+  font-family: 'Henny Penny', sans-serif;
+  font-size: larger;
+}
+
+.activeTab {
+  border-radius: 30px;
+  background: radial-gradient(rgba(114, 116, 68, 0.575), rgba(61, 54, 54, 0.678));
+  font-family: 'Henny Penny', sans-serif;
+  font-size: larger;
+}
+
