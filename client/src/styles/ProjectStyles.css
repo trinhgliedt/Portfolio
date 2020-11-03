@@ -2,24 +2,14 @@
     /* outline: 1px solid grey; */
 }
 
-
-#moreInfoNav1, #moreInfoNav2, #moreInfoNav3 {
-    background: radial-gradient(rgba(114, 116, 68, 0.575), rgba(61, 54, 54, 0.678));
-    border-radius: 10px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 5px;
+.projectHeader {
+    background: radial-gradient(rgb(150, 151, 101), #4e4848e1);
+    border-radius: 20px;
+    padding: 10px 0;
 }
 
-/* #moreInfoContent1, #moreInfoContent2, #moreInfoContent3 {display: none;} */
-
-#moreInfoNav1:hover ~ #moreInfoContent1, #moreInfoNav2:hover ~ #moreInfoContent2, #moreInfoNav3:hover ~ #moreInfoContent3 {
-    display: block;
-    }
-
-
 .projectCard {
-    background: radial-gradient(rgb(175, 177, 105), rgba(78, 72, 72, 0.883));
+    background: radial-gradient(rgba(175, 177, 105, 0.726), rgba(78, 72, 72, 0.883));
     box-shadow: 20px 30px 15px 15px rgba(0,0,0,0.4);
     z-index: 2;
     border-radius: 40px;
@@ -54,6 +44,7 @@
     z-index: 5;
     transform: translateY(-150px);
     transition: all .4s ease-in-out;
+    background: radial-gradient(rgb(175, 177, 105), rgb(78, 72, 72));
 }
 #project3:hover ~ #project1 {
     display: none;
