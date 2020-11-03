@@ -28,7 +28,6 @@ function NavBar(props) {
   return (
     <>
     <div id="navbarwrap" className="row" style={{ position: 'relative', zIndex: '2'}}>
-    {/* <h2  className="text-center mb-4 pt-4 mt-0">Trinh Gliedt</h2> */}
       <div className="col hoverable mx-2 text-center" >
         <div id="intro"
         className={selectedTab === "intro" ? "activeTab btn selected col text-white" : "menuItem hoverable btn selected col text-white"} 
