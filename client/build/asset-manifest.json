@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.19a70a8f.chunk.css",
-    "main.js": "/static/js/main.4812948e.chunk.js",
-    "main.js.map": "/static/js/main.4812948e.chunk.js.map",
+    "main.js": "/static/js/main.d9007be3.chunk.js",
+    "main.js.map": "/static/js/main.d9007be3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.af396108.js",
     "runtime-main.js.map": "/static/js/runtime-main.af396108.js.map",
     "static/css/2.dc1960d9.chunk.css": "/static/css/2.dc1960d9.chunk.css",
@@ -15,7 +15,7 @@
     "static/css/main.19a70a8f.chunk.css.map": "/static/css/main.19a70a8f.chunk.css.map",
     "static/js/2.46082689.chunk.js.LICENSE.txt": "/static/js/2.46082689.chunk.js.LICENSE.txt",
     "static/media/Resume.6621203b.pdf": "/static/media/Resume.6621203b.pdf",
-    "static/media/_1_Django_Ecommerce.20ecd902.mp4": "/static/media/_1_Django_Ecommerce.20ecd902.mp4",
+    "static/media/_1_Django_Ecommerce.c5901de5.mp4": "/static/media/_1_Django_Ecommerce.c5901de5.mp4",
     "static/media/_2_AQIMap.97c2e5af.mp4": "/static/media/_2_AQIMap.97c2e5af.mp4",
     "static/media/_3_Let_Meet.3597a240.mp4": "/static/media/_3_Let_Meet.3597a240.mp4",
     "static/media/cert_CPA.e527382a.jpg": "/static/media/cert_CPA.e527382a.jpg",
@@ -30,6 +30,6 @@
     "static/css/2.dc1960d9.chunk.css",
     "static/js/2.46082689.chunk.js",
     "static/css/main.19a70a8f.chunk.css",
-    "static/js/main.4812948e.chunk.js"
+    "static/js/main.d9007be3.chunk.js"
   ]
 }
