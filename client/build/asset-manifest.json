@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.19a70a8f.chunk.css",
-    "main.js": "/static/js/main.d9007be3.chunk.js",
-    "main.js.map": "/static/js/main.d9007be3.chunk.js.map",
+    "main.css": "/static/css/main.d9d33019.chunk.css",
+    "main.js": "/static/js/main.075537c3.chunk.js",
+    "main.js.map": "/static/js/main.075537c3.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.af396108.js",
     "runtime-main.js.map": "/static/js/runtime-main.af396108.js.map",
     "static/css/2.dc1960d9.chunk.css": "/static/css/2.dc1960d9.chunk.css",
@@ -12,7 +12,7 @@
     "static/js/3.e6b5678a.chunk.js.map": "/static/js/3.e6b5678a.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.dc1960d9.chunk.css.map": "/static/css/2.dc1960d9.chunk.css.map",
-    "static/css/main.19a70a8f.chunk.css.map": "/static/css/main.19a70a8f.chunk.css.map",
+    "static/css/main.d9d33019.chunk.css.map": "/static/css/main.d9d33019.chunk.css.map",
     "static/js/2.46082689.chunk.js.LICENSE.txt": "/static/js/2.46082689.chunk.js.LICENSE.txt",
     "static/media/Resume.6621203b.pdf": "/static/media/Resume.6621203b.pdf",
     "static/media/_1_Django_Ecommerce.c5901de5.mp4": "/static/media/_1_Django_Ecommerce.c5901de5.mp4",
@@ -29,7 +29,7 @@
     "static/js/runtime-main.af396108.js",
     "static/css/2.dc1960d9.chunk.css",
     "static/js/2.46082689.chunk.js",
-    "static/css/main.19a70a8f.chunk.css",
-    "static/js/main.d9007be3.chunk.js"
+    "static/css/main.d9d33019.chunk.css",
+    "static/js/main.075537c3.chunk.js"
   ]
 }

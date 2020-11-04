@@ -3,7 +3,7 @@
 }
 
 .projectHeader {
-    background: radial-gradient(rgb(150, 151, 101), #4e4848e1);
+    background: radial-gradient(rgba(118, 119, 82, 0.698), #4e4848fa);
     border-radius: 20px;
     padding: 10px 0;
 }

@@ -3,6 +3,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import '../styles/NavBarStyle.scss';
 
+
+
 function NavBar(props) {
   $(function(){
     $(document).ready(function(){
@@ -19,7 +21,6 @@ function NavBar(props) {
   });
 
   const {selectedTab, setSelectedTab} = props;
-
 
     function handleSelection(e){
       setSelectedTab(e.target.id);
@@ -50,17 +51,17 @@ function NavBar(props) {
       </div>
       <div  className="col hoverable mr-2 text-center">
         
-        <a href="https://www.linkedin.com/in/trinhgliedt/" 
+        <a href="https://www.linkedin.com/in/trinhgliedt/" target="_blank" rel="noreferrer"
         id="linkedIn"
         style={{ position: 'relative', zIndex: '3'}}
-        className="menuItem hoverable menuItem btn selected col text-white"
+        className={selectedTab === "linkedIn" ? "activeTab btn selected col text-white" : "menuItem hoverable btn selected col text-white"} 
         onClick={e => handleSelection(e)}
         >LinkedIn</a>
       </div>
-      <div id="gitHubWrap" className="col hoverable mr-2 text-center">
-        <a href="https://github.com/trinhgliedt" 
+      <div id="gitHub" className="col hoverable mr-2 text-center">
+        <a href="https://github.com/trinhgliedt" target="_blank" rel="noreferrer"
         id="gitHub" 
-        className="menuItem hoverable btn selected col text-white"
+        className={selectedTab === "gitHub" ? "activeTab btn selected col text-white" : "menuItem hoverable btn selected col text-white"} 
         onClick={e => handleSelection(e)}
         >GitHub</a>
       </div>
@@ -72,6 +73,10 @@ function NavBar(props) {
         >Certificates</div>
       </div>
     </div>
+    <div className={selectedTab === "gitHub" ? "linkNote" : "linkNoteHidden"} 
+    id="gitHubLinkClicked">..... You were directed to my Github page ..... </div>
+    <div  className={selectedTab === "linkedIn" ? "linkNote" : "linkNoteHidden"}  
+    id="linkedInLinkClicked">..... You were directed to my LinkedIn page .....</div>
     </>
   );
 }
