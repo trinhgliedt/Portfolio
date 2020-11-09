@@ -11,8 +11,9 @@ function Projects() {
 return (
     <div id="projectWrap" className="pt-4 overflow-auto" style={{ position: 'relative', zIndex: '2'}}>
         {/* First project */}
-        <div id="project1" className="col-9 ml-5 mr-3 px-4 projectCard mb-4" >
-            <h5 className="mt-3 mb-5 text-center projectHeader">Sunflowers - Clothes shopping made easy</h5>
+        <div id="project1" className="col-9 ml-5 mr-3 px-4 projectCard mb-0" >
+            <h5 className="mt-3 mb-0 text-center projectHeader">Sunflowers - Clothes shopping made easy</h5>
+            <a style={{marginLeft:'45%'}} class="mb-4 text-center" href="http://18.191.91.140/" target="_blank" rel="noreferrer">Deployed site</a>
             <video width="100%"  controls>
                 <source src={djangoVideo} type="video/mp4"/>
             </video>
