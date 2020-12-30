@@ -8,6 +8,7 @@
   --yellowFont: yellow;
   --orangeFont: orange;
   --purpleFont: rgb(235, 80, 235);
+  --silverFont: silver;
 }
 
 body,
@@ -42,4 +43,11 @@ h2 {
 }
 .purpleFont {
     color: var(--purpleFont);
+}
+.silverFont {
+  color: var(--silverFont);
+}
+
+.whiteFont {
+  color: white;
 }
