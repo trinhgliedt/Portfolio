@@ -22,14 +22,6 @@ h2 {
   z-index: 2;
 }
 
-.largeTitle {
-  /* color: var(--lightGreenFont); */
-  background: radial-gradient(
-    rgba(92, 92, 84, 0.575),
-    rgba(61, 54, 54, 0.678)
-  );
-  border-radius: 0.2em;
-}
 
 @media only screen and (max-width: 768px) {
   .largeTitle {

@@ -32,7 +32,7 @@ function NavBar(props) {
       {/* About Me */}
       <div className="hoverable text-center mb-lg-2 mb-md-2 mb-sm-1" >
         <div id="intro"
-        className={selectedTab === "intro" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col"} 
+        className={selectedTab === "intro" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col text-success" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col text-white"} 
         onClick={e => handleSelection(e)}
         >About Me</div>
       </div>
@@ -40,7 +40,7 @@ function NavBar(props) {
       {/* Projects */}
       <div  className="hoverable text-center mb-lg-2 mb-md-2 mb-sm-1" >
         <div id="projects" 
-        className={selectedTab === "projects" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col"} 
+        className={selectedTab === "projects" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col text-success" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col text-white"} 
         onClick={e => handleSelection(e)}
         >Projects</div>
       </div>
@@ -48,7 +48,7 @@ function NavBar(props) {
       {/* Resume */}
       <div  className="hoverable text-center mb-lg-2 mb-md-2 mb-sm-1">
         <div id="resume" 
-        className={selectedTab === "resume" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col"} 
+        className={selectedTab === "resume" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col text-success" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col text-white"} 
         onClick={e => handleSelection(e)}
         >Resume</div>
       </div>
@@ -57,7 +57,7 @@ function NavBar(props) {
       <div  className="hoverable text-center mb-lg-2 mb-md-2 mb-sm-1">
         <a href="https://www.linkedin.com/in/trinhgliedt/" target="_blank" rel="noreferrer"
         style={{ position: 'relative', zIndex: '3'}}
-        className={selectedTab === "linkedIn" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col"} 
+        className={selectedTab === "linkedIn" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col text-success" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col text-white"} 
         onClick={e => handleSelection(e)}
         >LinkedIn</a>
       </div>
@@ -65,7 +65,7 @@ function NavBar(props) {
       {/* Github */}
       <div id="gitHub" className="hoverable text-center mb-lg-2 mb-md-2 mb-sm-1">
         <a href="https://github.com/trinhgliedt" target="_blank" rel="noreferrer"
-        className={selectedTab === "gitHub" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col"} 
+        className={selectedTab === "gitHub" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col text-success" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col text-white"} 
         onClick={e => handleSelection(e)}
         >GitHub</a>
       </div>
@@ -73,7 +73,7 @@ function NavBar(props) {
       {/* Certificates */}
       <div id="certificates" className="hoverable text-center mb-lg-2 mb-md-2 mb-sm-1">
       <div id="certificates" 
-        className={selectedTab === "certificates" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col"} 
+        className={selectedTab === "certificates" ? "px-lg-5 px-md-4 px-sm-2 activeTab btn col text-success" : "px-lg-5 px-md-4 px-sm-2 menuItem hoverable btn col text-white"} 
         onClick={e => handleSelection(e)}
         >Certificates</div>
       </div>
