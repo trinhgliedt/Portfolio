@@ -20,18 +20,18 @@ const Projects = (props) => {
                     challenges="With the page acting like store front for a business, it took a bit of effort to figure out the right presentation of the elements on the page, and also to be sure that all elements fits nicely in different screen sizes." 
                     nextSteps="A lot more content can be added to the sub-pages. And it would be good to build dynamic theme for the user to choose based on their liking." 
                     collaborators={<p>None</p>} 
-                    links={<a href="https://github.com/trinhgliedt/equityX">GitHub Repo</a>} />
+                    links={<a target="_blank" rel="noreferrer" href="https://github.com/trinhgliedt/equityX">GitHub Repo</a>} />
             </div>
             {/* SunFlowers */}
             <div className="col-sm-10 col-md-10 col-lg-6 col-xl-5">
-                <ProjectCard id="2" title="Sunflowers" imageLink={sunflowersVideo} 
+                <ProjectCard id="2" title={<a href="http://18.191.91.140/" target="_blank" rel="noreferrer">Sunflowers</a>} imageLink={sunflowersVideo} 
                     description="Easy fashion shopping from the comfort of your home - You want it: You've got it!" 
                     technologies="Python, Django MVC, Javascript, HTML, CSS, Bootstrap" 
-                    inspiration="I love the convenience of being able to browse and shop for clothes from the comfort of your home, and I also think eCommerce sites are widely needed by many businesses. Both of those reasons had me want to try building this site for our Python stack coding bootcamp project.  We used Python, HTML, CSS for front-end and Django framework for back-end. We also utilized Django Admin function to upload product photos and product details." 
+                    inspiration="I love the convenience of being able to browse and shop for clothes from the comfort of your home, and I also think eCommerce sites are widely needed by many businesses. Both of those reasons had me want to try building this site for our Python stack coding boot camp project.  We used Python, HTML, CSS for front-end and Django framework for back-end. We also utilized Django Admin function to upload product photos and product details." 
                     challenges="One of the biggest challenges was figuring out the best relationship structure between different objects so that information will be reflected properly. We have documented our thought process in the relevant files to make it easy for code viewer to understand." 
                     nextSteps="More functionalities can be added so that owner of the shop can add and update inventory, add cash to the business and view a simple set of the financial operation reports. For sales tax, an API call can be made so that the sales tax rate can be updated automatically based on the customer's address." 
                     collaborators={<p><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/howard-shin/">Howard Shin</a>, <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/madhuri-ravuri/">Madhuri Ravuri</a></p>}
-                    links={<a href="https://github.com/trinhgliedt/Ecommerce_Django_Project">GitHub Repo</a>}/>
+                    links={<a target="_blank" rel="noreferrer" href="https://github.com/trinhgliedt/Ecommerce_Django_Project">GitHub Repo</a>}/>
             </div>
             {/* AQI Maps */}
             <div className="col-sm-10 col-md-10 col-lg-6 col-xl-5">
@@ -42,7 +42,7 @@ const Projects = (props) => {
                     challenges="One of our challenges was to integrate the two layers of API, one from World Air Quality Index API and one from GoogleMaps API, to ensure the information is displayed correctly." 
                     nextSteps="More API calls could be made from World Air Quality Index for the forecast air quality index value."
                     collaborators={<p><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/howard-shin/">Howard Shin</a></p>}
-                    links={<a href="https://github.com/SHJoon/AQI-Maps">GitHub Repo</a>}/>
+                    links={<a target="_blank" rel="noreferrer" href="https://github.com/SHJoon/AQI-Maps">GitHub Repo</a>}/>
             </div>
             {/* Let's Meet */}
             <div className="col-sm-10 col-md-10 col-lg-6 col-xl-5">
@@ -52,8 +52,8 @@ const Projects = (props) => {
                     inspiration="I have enjoyed utilizing event organizer apps such as Meetup.com and Facebook Groups, and wanted to rebuild a similar tool to enable people with multure interests to connect." 
                     challenges="We were lucky to be smooth sailing with the project. Implementing Spring Authorization took a bit to figured out, and we were able to set clear control on which pages a user can access if they didn't log in." 
                     nextSteps="It would be great to have Web Socket implemented on the comment page so that the users do not need to refresh the page to see new comments."
-                    collaborators={<p><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/howard-shin/">Howard Shin</a><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/madhuri-ravuri/">Madhuri Ravuri</a> </p>}
-                    links={<a href="https://github.com/trinhgliedt/Let_s_Meet_Java_Project">GitHub Repo</a>}/>
+                    collaborators={<p><a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/howard-shin/">Howard Shin</a>, <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/madhuri-ravuri/">Madhuri Ravuri</a> </p>}
+                    links={<a target="_blank" rel="noreferrer" href="https://github.com/trinhgliedt/Let_s_Meet_Java_Project">GitHub Repo</a>}/>
             </div>
         </div>
         </>

@@ -22,11 +22,17 @@ h2 {
   z-index: 2;
 }
 
+@media only screen and (max-width: 768px) {
+  .largeTitle {
+    font-size: 1.2em;
+  }
+}
+
 #aboutMe {
-  margin-top: 10px;
+  margin-top: 0.8em;
   height: auto;
-  border-radius: 30px;
-  padding: 40px;
+  border-radius: 2.2em;
+  padding: 3.5%;
   background: radial-gradient(
     rgba(114, 116, 68, 0.575),
     rgba(61, 54, 54, 0.678)

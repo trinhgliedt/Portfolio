@@ -81,3 +81,10 @@ section{
     transform: translateX(20px) rotateX(180deg); 
     filter: blur(1px);
 }
+
+
+@media only screen and (max-width: 768px) {
+    img {
+        width: 50%;
+    }
+}
